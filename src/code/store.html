@@ -1,0 +1,2691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./register.css">
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./store.css">
+    <link rel="stylesheet" href="./homeCart.css">
+    <link rel="stylesheet" href="./homeGhim.css">
+    <link rel="stylesheet" href="./homeInformation.css">
+    <link rel="stylesheet" href="./homeUser.css">
+    <link rel="stylesheet" href="./homeThanhToanCurrent.css">
+    <link rel="stylesheet" href="./homeThanhToan.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- body register -->
+    <div id="body-register">
+        <div class="wrapper-body-register">
+            <div class="wrapper-top">
+              <img src="../database/Image/maserati.png" alt=""> 
+            </div>
+
+            <div class="wrapper-register">
+              <div class="register-box">
+                <div class="register-title">
+                  <p>Đăng Ký</p>
+                </div>
+
+                <div class="register-form">
+                  <form id="formWrapperBodyRegister" action="">
+
+                    <div class="register-form-ten">
+                      <div class="form-ten-title">
+                        <i class="fa-solid fa-star-of-life"></i>
+                        <p>Tên người dùng</p>
+                      </div>
+                      <div class="form-ten-input">
+                        <input id='ten' placeholder="Tên người dùng..." type="text">
+                        <p id="tenA">Vui lòng không để trống</p>
+                        <p id="tenB">Vui lòng nhập tối thiểu 5 ký tự</p>
+                      </div>
+                    </div>
+
+                    <div class="register-form-email">
+                      <div class="form-email-title">
+                        <i class="fa-solid fa-star-of-life"></i>
+                        <p>Email</p>
+                      </div>
+                      <div class="form-email-input">
+                        <input id="email" placeholder="Email..." type="email">
+                        <p id="emailA">Vui lòng không để trống</p>
+                        <p id="emailB">Vui lòng sử dụng @gmail.com</p>
+                      </div>
+                    </div>
+
+                    <div class="register-form-password">
+                      <div class="form-password-title">
+                        <i class="fa-solid fa-star-of-life"></i>
+                        <p>Password</p>
+                      </div>
+                      <div class="form-password-input">
+                        <input id="password" placeholder="Password..." type="password">
+                        <p id="passwordA">Vui lòng không để trống</p>
+                        <p id="passwordB">Vui lòng nhập tối thiếu 5 ký tự</p>
+                      </div>
+                    </div>
+
+                    <div class="register-form-verifypassword">
+                      <div class="form-verifypassword-title">
+                        <i class="fa-solid fa-star-of-life"></i>
+                        <p>Xác thực password</p>
+                      </div>
+                      <div class="form-verifypassword-input">
+                        <input id="verify-password" placeholder="Nhập lại password..." type="password">
+                        <p id="verify-passwordA">Vui lòng không để trống</p>
+                        <p id="verify-passwordB">Vui lòng nhập trùng khớp password</p>
+                      </div>
+                    </div>
+
+                    <div class="register-form-gender">
+                      <div class="form-gender-title">
+                        <i class="fa-solid fa-star-of-life"></i>
+                        <p>Giới tính</p>
+                      </div>
+                      <div class="form-gender-input">
+                        <div>
+                          <p>Nam</p>
+                          <input class="gender" checked type="radio" name="gender" value="Nam">
+                        </div>
+                        <div>
+                          <p>Nữ</p>
+                          <input class="gender" type="radio" name="gender" value="Nữ">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="register-form-address">
+                      <div class="form-address-title">
+                        <i class="fa-solid fa-star-of-life"></i>
+                        <p>Địa chỉ</p>
+                      </div>
+                      <div class="form-address-input">
+                        <input id="address" placeholder="Địa chỉ..." type="text">
+                        <p id="addressA">Vui lòng không để trống</p>
+                      </div>
+                    </div>
+
+                    <div class="register-submit">
+                      <button id="submit">
+                        Đăng ký
+                      </button>
+                    </div>
+
+                    <div class="login-register">
+                      <p>Bạn đã có tài khoản ? <button id="register-dangnhap">Đăng nhập</button> ngay</p>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="wrapper-bottom">
+              <div>
+                <ul>
+                  <li>Điều khoản sử dụng</li>
+                  <li>Liên hệ hợp tác</li>
+                  <li>Phản hồi</li>
+                  <li>Báo lỗi</li>
+                </ul>
+                      </div>
+                    </div>
+                  </div>
+    </div>
+
+    <!-- body login -->
+    <div id="body-login">
+        <div class="wrapper-body-login">
+            <div class="wrapper-top">
+              <img src="../database/Image/maserati.png" alt=""> 
+            </div>
+
+            <div class="wrapper-login">
+              <div class="login-box">
+                <div class="login-title">
+                  <p>Đăng nhập</p>
+                </div>
+
+                <div class="login-form">
+                  <form id="form" action="">
+
+                    <div class="login-tendangnhap">
+                      <div class="login-tendangnhap-title">
+                        <i class="fa-solid fa-star-of-life"></i>
+                        <p>Email</p>
+                      </div>
+
+                      <div class="login-tendangnhap-input">
+                        <input id="tendangnhap" type="email" name="">
+                        <p id="tendangnhapA">Vui lòng không để trống</p>
+                        <p id="tendangnhapB">Email không tồn tại</p>
+                        <p id="tendangnhapC">Sai mật khẩu</p>
+                      </div>
+                    </div>
+
+                    <div class="login-matkhau">
+                      <div class="login-matkhau-title">
+                        <i class="fa-solid fa-star-of-life"></i>
+                        <p>Nhập mật khẩu</p>
+                      </div>
+
+                      <div class="login-matkhau-input">
+                        <input id="matkhau" type="password">
+                        <p id="matkhauA">Vui lòng nhập mật khẩu</p>
+                      </div>
+                    </div>
+                  </form>
+
+                </div>
+
+                <div class="login-btn">
+                  <button id="submit">
+                    Đăng nhập
+                  </button>
+                </div>
+
+                <div class="register-login">
+                  <p>Bạn chưa có tài khoản ? <button id="login-dangky">Đăng ký</button> ngay</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="wrapper-bottom">
+              <div>
+                <ul>
+                  <li>Điều khoản sử dụng</li>
+                  <li>Liên hệ hợp tác</li>
+                  <li>Phản hồi</li>
+                  <li>Báo lỗi</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+    </div>
+
+    <!-- body home -->
+    <div id="body-home">
+        <div class="wrapper-body-home">
+            <!--top-->
+              <div class="top">
+                <!--top-icon-->
+                <div class="top-box">
+                    <div class="top-icon-nav">
+                        <ul>
+                            <li>
+                                <p>
+                                  <button id="home-mauxe">
+                                    <p>Mẫu xe</p>
+                                  </button>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                  <button id="home-thongtin">
+                                    <p>Thông tin</p>
+                                  </button>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="top-icon-img">
+                        <div>
+                            <img src="../database/Image/maserati.png" alt="#">
+                        </div>
+                    </div>
+                    <div class="top-icon-user"> 
+                        <div id="user">
+                          <button id="home-user">
+                            <i class="fa-solid fa-circle-user"></i>
+                          </button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+                <div class="home-middle">
+                  <div class="home-middle-slide">
+                    <video id="main-video" src="../database/Image/video2.mp4" width="100%" height="100%" object-fit="fill" muted loop autoplay>
+                    </video>
+                  </div>
+                </div>
+                
+                <!--bottom-->
+                <div id="bottom">
+                  <div class="bottom-top">
+                      <div class="top-1">
+                          <div class="top-1-div1">
+                              <i class="fa-solid fa-arrow-pointer"></i>
+                              <p>Nhập zip code của bạn</p>
+                          </div>
+                          <div class="top-1-div2">
+                              <div class="">
+                                  
+                              </div>
+                              <div>
+                                  <p>Xây dựng sự sở hữu</p>
+                                  <i class="fa-solid fa-chevron-right"></i>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="top-2">
+                          <div>
+                              <i class="fa-solid fa-car"></i>
+                              <p>Xây dựng sự sở hữu</p>
+                              <i class="fa-solid fa-chevron-right"></i>
+                          </div>
+                          <div>
+                              <i class="fa-solid fa-id-card"></i>
+                              <p>Kiểm tra bằng lái</p>
+                              <i class="fa-solid fa-chevron-right"></i>
+                          </div>
+                      </div>
+                      <div class="top-3">
+                          <div>
+                              <i class="fa-solid fa-money-bill-wave"></i>
+                              <p>Trích dẫn</p>
+                              <i class="fa-solid fa-chevron-right"></i>
+                          </div>
+                          <div>
+                              <i class="fa-solid fa-location-dot"></i>
+                              <p>Vị trí</p>
+                              <i class="fa-solid fa-chevron-right"></i>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="bottom-middle">
+                      <div class="bottom-middle-1">
+                          <div>
+                              <img src="../database/Image/maserati.png">
+                          </div>    
+                      </div>
+                      <div class="bottom-middle-2">
+                          <div class="middle-2-element">
+                              <li><i class="fa-solid fa-chevron-down"></i><p>Mẫu xe</p></li>
+                              <li><i class="fa-solid fa-chevron-down"></i><p>Thương hiệu</p></li>
+                              <li><i class="fa-solid fa-chevron-down"></i><p>Quyền sở hữu</p></li>
+                              <li><i class="fa-solid fa-chevron-down"></i><p>Ngựa</p></li>
+                          </div>
+                          <div class="middle-2-element">
+                              <li>
+                                  <p>Dịch vụ</p>
+                              </li>
+                              <li>
+                                  <p>Thể loại</p>
+                              </li>
+                              <li>
+                                  <p>Vị trí thỏa thuận</p>
+                              </li>
+                              <li>
+                                  <p>Xây dựng và giá</p>
+                              </li>
+                          </div>
+                          <div class="middle-2-element">
+                              <li><p>Nhận công bố</p></li>
+                              <li><p>Liên hệ</p></li>
+                              <li><p>Bài báo mới</p></li>
+                              <li><p>Khả năng tương thích</p></li>
+                          </div>
+                          <div class="middle-2-element">
+                              <p>Đặt hẹn</p>
+                              <div>
+                                  <p>Đăng ký sở hữu</p>
+                                  <i class="fa-solid fa-chevron-right"></i>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="bottom-bottom">
+                      <div>
+                          <i class="fa-solid fa-earth-asia"></i>
+                          <p>Website Thế Giới</p>
+                      </div>
+                      <div class="list-socialmedia">
+                          <div>
+                              <p>Theo dõi mạng xã hội</p>
+                          </div>
+                          <div>
+                              <i class="fa-brands fa-facebook-f"></i>
+                              <i class="fa-brands fa-instagram"></i>
+                              <i class="fa-brands fa-youtube"></i>
+                              <i class="fa-brands fa-tiktok"></i>
+                              <i class="fa-brands fa-twitter"></i>
+                          </div>
+                      </div>
+                      <div>
+                          <p>Ghi chú và quyền riêng tư</p>
+                      </div>
+                      <div>
+                          <p>Cài đặt Cookies</p>
+                      </div>
+                          </div>
+                      </div>
+                  </div>
+    </div>
+
+    <!-- body store -->
+    <div id="body-store">
+        <div class="wrapper-body-store">
+        <!--top-->
+        <div class="top">
+            <!--top-icon-->
+            <div class="top-box">
+                <div class="top-icon-nav">
+                    <ul>
+                        <li>
+                            <p id="body-store-home">Trang chủ</p>
+                        </li>
+                        <li>
+                            <p id="top-mauxe">Mẫu xe</p>
+                        </li>
+                        <li>
+                            <p id="top-thongtin">Thông tin</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="top-icon-img">
+                    <div>
+                        <img src="../database/Image/maserati.png" alt="#">
+                    </div>
+                </div>
+                <div class="top-icon-user">
+                    <div id="top-search">
+                        <i class="fa-solid fa-magnifying-glass-dollar"></i>
+                    </div>
+                    <div id="cart">
+                            <i class="fa-solid fa-money-check-dollar"></i>
+                        <div id="cart-quantity">
+                            <p class="quantity-cart">0</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div id="heart">
+                            <i class="fa-solid fa-thumbtack"></i>
+                            <div id="heart-quantity">
+                                <p class="quantity-ghim">0</p>
+                            </div>
+                    </div>
+                    <div id="user-store">
+                            <i class="fa-solid fa-circle-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--background-->
+        <div class="top-background">
+            <div id="background">
+            </div>
+        </div>
+
+        <!--middle-->
+        <div id="middle">
+            <div class="middle-models">
+                <h2 class="middle-models-title">Các Mẫu Xe Thịnh Hành</h2>
+                <ul class="middle-models-list">
+                    <!-- <li class="model">
+                        <img src="./background(2).jpg">
+                        <div class="name-model">
+                            <p>Targa</p>
+                        </div>
+                        <div class="middle-more">
+                            <button>Lọc mẫu</button>
+                            <div class="middle-more-info">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, nulla!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="model">-->
+                </ul>
+            </div>
+
+            <div class="middle-filter">
+                <h2 class="middle-filter-title">Xây Dựng Mẫu Xe Theo Mong Muốn Của Bạn</h2>
+                <div class="middle-filter-search">
+                    <div class="filter-search-box">
+                        <form id="formSearch" action="">
+                            <div class="filter-search">
+                                <input id="input-search" type="text"  name="" value="">
+                                <p>Tìm kiếm ngay...</p>
+                            </div>
+                            <div class="filter-click-search">
+                                <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <form id="formChecked">
+                    <p class="title-filter-form">Lọc mẫu xe</p>
+                    <div class="middle-filter-term">
+                        <div class="mauxe">
+                            <div class="middle-filter-by-mauxe">
+                                <div class="mauxe-title"><h2>Mẫu xe</h2></div>
+                                <div class="mauxe-choice">
+                                    <div><input class="checked-mauxe" value="boxster" type="checkbox" name=""><p>boxster</p></div>
+                                    <div><input class="checked-mauxe" value="cayman" type="checkbox" name=""><p>cayman</p></div>
+                                    <div><input class="checked-mauxe" value="carrera s" type="checkbox" name=""><p>carrera s</p></div>
+                                    <div><input class="checked-mauxe" value="carrera" type="checkbox" name=""><p>carrera</p></div>
+                                    <div><input class="checked-mauxe" value="targa" type="checkbox" name=""><p>targa</p></div>
+                                    <div><input class="checked-mauxe" value="turbo" type="checkbox" name=""><p>turbo</p></div>
+                                    <div><input class="checked-mauxe" value="cayenne" type="checkbox" name=""><p>cayenne</p></div>
+                                    <div><input class="checked-mauxe" value="cross turismo" type="checkbox" name=""><p>cross turismo</p></div>
+                                    <div><input class="checked-mauxe" value="macan" type="checkbox" name=""><p>macan</p></div>
+                                    <div><input class="checked-mauxe" value="panamera" type="checkbox" name=""><p>panamera</p></div>
+                                    <div><input class="checked-mauxe" value="taycan" type="checkbox" name=""><p>taycan</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tocdo-congsuat-tangtoc">
+                            <div class="middle-filter-by-tocdo">
+                                <div class="tocdo-title"><h2>Tốc độ (km/h)</h2></div>
+                                <div class="tocdo-choice">
+                                    <div><input class="checked-tocdo" value="275" type="checkbox" name=""><p>275</p></div>
+                                    <div><input class="checked-tocdo" value="300" type="checkbox" name=""><p>300</p></div>
+                                    <div><input class="checked-tocdo" value="325" type="checkbox" name=""><p>325</p></div>
+                                    <div><input class="checked-tocdo" value="350" type="checkbox" name=""><p>350</p></div>
+                                </div>
+                            </div>
+                            <div class="middle-filter-by-congsuat">
+                                <div class="congsuat-title"><h2>Công Suất (PS)</h2></div>
+                                <div class="congsuat-choice">
+                                    <div><input class="checked-congsuat" value="350" type="checkbox" name=""><p>350</p></div>
+                                    <div><input class="checked-congsuat" value="375" type="checkbox" name=""><p>375</p></div>
+                                    <div><input class="checked-congsuat" value="425" type="checkbox" name=""><p>425</p></div>
+                                    <div><input class="checked-congsuat" value="450" type="checkbox" name=""><p>450</p></div>
+                                    <div><input class="checked-congsuat" value="500" type="checkbox" name=""><p>500</p></div>
+                                </div>
+                            </div>
+                            <div class="middle-filter-by-tangtoc">
+                                <div class="tangtoc-title"><h2>Tăng tốc (s)</h2></div>
+                                <div class="tangtoc-choice">
+                                    <div><input class="checked-tangtoc" value="2.5" type="checkbox" name=""><p>2.5</p></div>
+                                    <div><input class="checked-tangtoc" value="3.0" type="checkbox" name=""><p>3.0</p></div>
+                                    <div><input class="checked-tangtoc" value="3.5" type="checkbox" name=""><p>3.5</p></div>
+                                    <div><input class="checked-tangtoc" value="4.0"type="checkbox" name=""><p>4.0</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cao-dai-giatien">
+                            <div class="middle-filter-by-cao">
+                                <div><h2 class="cao-title">Độ cao xe (cm)</h2></div>
+                                <div class="cao-choice">
+                                    <div><input class="checked-cao" value="1285" type="checkbox" name=""><p>1.285</p></div>
+                                    <div><input class="checked-cao" value="1295" type="checkbox" name=""><p>1.295</p></div>
+                                    <div><input class="checked-cao" value="1305" type="checkbox" name=""><p>1.305</p></div>
+                                </div>
+                            </div>
+                            <div class="middle-filter-by-dai">
+                                <div class="dai-title"><h2>Độ dài xe (cm)</h2></div>
+                                <div class="dai-choice">
+                                    <div><input class="checked-dai" value="4756" type="checkbox" name=""><p>4.756</p></div>
+                                    <div><input class="checked-dai" value="4895" type="checkbox" name=""><p>4.895</p></div>
+                                    <div><input class="checked-dai" value="4950" type="checkbox" name=""><p>4.950</p></div>
+                                </div>
+                            </div>
+                            <div class="middle-filter-by-giatien">
+                                <div><h2 class="giatien-title">Giá tiền</h2></div>
+                                <div class="giatien-choice">
+                                    <div class="giatien-choice-input">
+                                        <input id="filter-price" type="range" min="1" max="20" step="1" value="10" >
+                                    </div>
+                                    <div class="giatien-choice-price">
+                                        <p>1 tỷ vnđ</p>
+                                        <p class="valueRange">10 tỷ vnđ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-submit-filter">
+                        <button id="submit"><i class="fa-solid fa-flag-checkered"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!--middle-item-->
+        <div id="middle-item">
+            <div class="middle-item-key">
+                <h2 id="contentSearch"></h2>
+            </div>
+            <div class="middle-item-title">
+                <h2>Mẫu xe</h2>
+            </div>
+            <div class="middle-item-list">
+
+                <!-- <div class="middle-item-box">
+                    <div class="item-box-car">
+                        <div class="item-box-icon">
+                            <div class="icon-left">
+                                <i class="fa-solid fa-thumbtack"></i>
+                            </div>
+                            <div class="icon-right">
+                                <i class="fa-solid fa-money-check-dollar"></i>
+                            </div>
+                        </div>
+                        <div class="car-image">
+                            <img src="./macan-s.png">
+                        </div>
+                        <div class="car-buy">
+                            <div class="bar-buy-button">
+                                <button>Xem chi tiết</button>
+                            </div>
+                        </div>
+                        <div class="car-background">
+                            <img src="fake-background.jpg">
+                        </div>
+                    </div>
+
+                    <div class="item-box-info">
+                        <div class="car-info-name">
+                            <p>Mẫu xe :</p>
+                            <p>Macan</p>
+                        </div>
+                        <div class="car-info-price">
+                            <p>Giá tiêu chuẩn :</p>
+                            <p>1.500.000.000vnđ</p>
+                        </div>
+                    </div>
+                </div> -->
+                
+            </div>
+
+            <div class="middle-item-pagination">
+                <div class="pagination-box">
+                    <ul>
+                        <!-- <li class="btn prev"><span><i class="fa-solid fa-chevron-left"></i> Prev</span></li>
+
+                        <li class="numb active"><span>1</span></li>
+                        <li class="numb"><span>2</span></li>
+                        <li class="dots"><span>...</span></li>
+                        <li class="numb"><span>4</span></li>
+                        <li class="numb"><span>5</span></li>
+                        <li class="dots"><span>...</span></li>
+                        <li class="numb"><span>7</span></li>
+
+                        <li class="btn next"><span> Next<i class="fa-solid fa-chevron-right"></i></span></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--middle-information-->
+        <div id="middle-information">
+            <div class="middle-information-title">
+                <h2>Đáng Chú Ý</h2>
+            </div>
+            <div class="middle-information-1">
+                <div class="information-1-img">
+                    <img src="../database/Image/information1.webp">
+                </div>
+                <div class="information-1-content">
+                    <h2>Phong cách của sự nổi tiếng</h2>
+                    <p>Porsche là một thương hiệu xe hơi sang trọng và thể thao, nổi tiếng với thiết kế tinh tế, hiệu suất mạnh mẽ và giá thành cao. Những chiếc xe Porsche thường được sơn với những màu sắc nổi bật, thu hút sự chú ý.
+
+                    Một trong những yếu tố góp phần tạo nên phong cách của sự nổi tiếng cho Porsche là màu sắc. Màu đỏ là màu sắc phổ biến nhất, tượng trưng cho sự mạnh mẽ và quyền lực. Ngoài ra, Porsche cũng có nhiều màu sắc khác nhau, từ cổ điển như đen và trắng đến hiện đại như xanh lá cây và xanh dương.
+
+                    Chính vì những yếu tố trên, Porsche đã trở thành một biểu tượng của sự nổi tiếng và thành công. Những chiếc xe Porsche luôn được giới thượng lưu và những người thành đạt lựa chọn.</p>
+                </div>
+            </div>
+            <div class="middle-information-2">
+                <div class="information-2-content">
+                    <h2>Cộng đồng trên toàn thế giới</h2>
+                    <p>Những chiếc xe Porsche không chỉ là phương tiện di chuyển, mà còn là biểu tượng của sự thành công và đẳng cấp. Chính vì vậy, những người sở hữu xe Porsche thường có xu hướng kết nối với nhau để chia sẻ niềm đam mê và sở thích chung.
+
+                    Trên toàn thế giới, có rất nhiều cộng đồng người sử dụng xe Porsche. Những cộng đồng này thường tổ chức các sự kiện, hội họp để giao lưu và kết nối với nhau. Ngoài ra, họ cũng có thể chia sẻ kinh nghiệm lái xe, sửa chữa và bảo dưỡng xe.
+
+                   Cộng đồng người sử dụng xe Porsche là một phần quan trọng trong văn hóa của thương hiệu này. Họ giúp Porsche tiếp cận với nhiều khách hàng hơn, đồng thời góp phần xây dựng hình ảnh của Porsche là một thương hiệu xe hơi sang trọng và đẳng cấp.</p>
+                </div>
+                <div class="information-2-img">
+                    <img src="../database/Image/information2.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!--middle-stars-->
+        <div id="middle-stars">
+            <div class="middle-stars-title">
+                <h2>Tiêu Chuẩn 5 Sao</h2>
+            </div>
+            <div class="middle-stars-reason">
+                <div class="reason1">
+                    <div class="reason-star">
+                        <img src="../database/Image/star.png">
+                    </div>
+                    <div class="reason-describe">
+                        <p>Thiết kế</p>
+                        <p>Tinh tế, sang trọng, thể thao</p>
+                    </div>
+                </div>
+                <div class="reason2">
+                    <div class="reason-star">
+                        <img src="../database/Image/star.png">
+                    </div>
+                    <div class="reason-describe">
+                        <p>Hiệu suất</p>
+                        <p>Mạnh mẽ, vượt trội</p>
+                    </div>
+                </div>
+                <div class="reason3">
+                    <div class="reason-star">
+                        <img src="../database/Image/star.png">
+                    </div>
+                    <div class="reason-describe">
+                        <p>Giá trị thương hiệu</p>
+                        <p>Cao cấp, đẳng cấp</p>
+                    </div>
+                </div>
+                <div class="reason4">
+                    <div class="reason-star">
+                        <img src="../database/Image/star.png">
+                    </div>
+                    <div class="reason-describe">
+                        <p>Cộng đồng</p>
+                        <p>Lớn mạnh, tích cực</p>
+                    </div>
+                </div>
+                <div class="reason5">
+                    <div class="reason-star">
+                        <img src="../database/Image/star.png">
+                    </div>
+                    <div class="reason-describe">
+                        <p>Bền vững</p>
+                        <p> Sản xuất, kinh doanh thân thiện với môi trường</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--bottom-->
+        <div id="bottom">
+            <div class="bottom-top">
+                <div class="top-1">
+                    <div class="top-1-div1">
+                        <i class="fa-solid fa-arrow-pointer"></i>
+                        <p>Nhập zip code của bạn</p>
+                    </div>
+                    <div class="top-1-div2">
+                        <div class="">
+                            
+                        </div>
+                        <div>
+                            <p>Xây dựng sự sở hữu</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-2">
+                    <div>
+                        <i class="fa-solid fa-car"></i>
+                        <p>Xây dựng sự sở hữu</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-id-card"></i>
+                        <p>Kiểm tra bằng lái</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="top-3">
+                    <div>
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                        <p>Trích dẫn</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Vị trí</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-middle">
+                <div class="bottom-middle-1">
+                    <div>
+                        <img src="../database/Image/maserati.png">
+                    </div>    
+                </div>
+                <div class="bottom-middle-2">
+                    <div class="middle-2-element">
+                        <li><i class="fa-solid fa-chevron-down"></i><p>Mẫu xe</p></li>
+                        <li><i class="fa-solid fa-chevron-down"></i><p>Thương hiệu</p></li>
+                        <li><i class="fa-solid fa-chevron-down"></i><p>Quyền sở hữu</p></li>
+                        <li><i class="fa-solid fa-chevron-down"></i><p>Ngựa</p></li>
+                    </div>
+                    <div class="middle-2-element">
+                        <li>
+                            <p>Dịch vụ</p>
+                        </li>
+                        <li>
+                            <p>Thể loại</p>
+                        </li>
+                        <li>
+                            <p>Vị trí thỏa thuận</p>
+                        </li>
+                        <li>
+                            <p>Xây dựng và giá</p>
+                        </li>
+                    </div>
+                    <div class="middle-2-element">
+                        <li><p>Nhận công bố</p></li>
+                        <li><p>Liên hệ</p></li>
+                        <li><p>Bài báo mới</p></li>
+                        <li><p>Khả năng tương thích</p></li>
+                    </div>
+                    <div class="middle-2-element">
+                        <p>Đặt hẹn</p>
+                        <div>
+                            <p>Đăng ký sở hữu</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-bottom">
+                <div>
+                    <i class="fa-solid fa-earth-asia"></i>
+                    <p>Website Thế Giới</p>
+                </div>
+                <div class="list-socialmedia">
+                    <div>
+                        <p>Theo dõi mạng xã hội</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-tiktok"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+                <div>
+                    <p>Ghi chú và quyền riêng tư</p>
+                </div>
+                <div>
+                    <p>Cài đặt Cookies</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- body cart -->
+    <div id="body-cart">
+        <div class="wrapper-body-cart">
+
+                    <!-- wrapper-thongbao -->
+                    <div class="wrapper-thongbao">
+                        <p>Xóa Thẻ Thành Công</p>
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+
+                    <!--wrapper top -->
+                    <div class="wrapper-top">
+                        <div class="top">
+                            <!--top-icon-->
+                            <div class="top-box">
+                                <div class="top-icon-img">
+                                    <div>
+                                        <img src="../database/Image/maserati.png" alt="#">
+                                    </div>
+                                </div>
+                                <div class="top-icon-nav">
+                                    <ul>
+                                        <li>
+                                            <p id="trangchuCart"><a>Trang chủ</a></p>
+                                        </li>
+                                        <li>
+                                            <p id="timkiemCart"><a>Tìm kiếm</a></p>
+                                        </li>
+                                        <li>
+                                            <p id="thongtinCart">Thông tin</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="top-icon-user">
+                                    <div id="cart">
+                                        <i class="fa-solid fa-money-check-dollar"></i>
+                                        <div id="cart-quantity">
+                                            <p class="quantity-cart">0</p>
+                                        </div>
+                                    </div>
+                                    <div id="ghimCart">
+                                        <a>
+                                            <i class="fa-solid fa-thumbtack"></i>
+                                            <div id="heart-quantity">
+                                                <p class="quantity-ghim">0</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="userCart">
+                                        <a>
+                                            <i class="fa-solid fa-circle-user"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- wrapper middle -->
+                    <div id="wrapper-middle">
+                        <div class="wrapper-middle-1">
+                            <div class="middle-1-nav">
+                                <div class="nav-list">
+                                    <ul>
+                                        <li>
+                                            <p>Trang chủ</p>
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </li>
+                                        <li>
+                                            <p>Trang tìm kiếm</p>
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </li>
+                                        <li>
+                                            <p>Thông tin xe</p>
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </li>
+                                        <li>
+                                            <p>Thẻ</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wrapper-middle-2">
+
+                            <div class="middle-2-chuy">
+                                <p>* Giá tiêu chuẩn bao gồm thuế nhập khẩu, thuế tiêu thụ đặc biệt và thuế giá trị gia tăng. Đối với dòng xe Panamera, Cayenne, Macan và Taycan giá tiêu chuẩn bao gồm thêm gói dịch vụ 4 năm bảo dưỡng. Bảng giá, thông số kỹ thuật và hình ảnh có thể thay đổi theo từng thời điểm mà không báo trước.</p>
+                            </div>
+
+                            <div class="middle-2-title">
+                                <h2>Danh Sách Mẫu Xe Thanh Toán</h2>
+                            </div>
+                            
+                            <div class="middle-2-content">
+
+                                <!-- list cart -->
+                                <div class="middle-2-listbox">
+                                    <div class="listbox-listCart">
+                                        <ul>
+                                            <!-- <li class="listCart-item">
+                                                <div class="listCart-stt">
+                                                    <div>
+                                                        <p>1</p>
+                                                    </div>
+                                                </div>
+                                                <div class="listCart-img">
+                                                    <div>
+                                                        <img src="./macan-gts.png">
+                                                    </div>
+                                                </div>
+                                                <div class="listCart-ten">
+                                                    <p>Macan GTS</p>
+                                                    <p>4.550.000.000 vnđ</p>
+                                                </div>
+                                                <div class="listCart-information">
+                                                    <button>
+                                                        <p>Thông tin xe</p>
+                                                    </button>
+                                                </div>
+                                                <div class="listCart-thanhtoanngay">
+                                                    <button>
+                                                        <p>Thanh toán ngay</p>
+                                                    </button>
+                                                </div>
+                                                <div class="listCart-xoaCart">
+                                                    <button>
+                                                        <i class="fa-solid fa-trash-can"></i>
+                                                    </button>
+                                                </div>
+                                            </li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="middle-2-total">
+                                    <div class="total-title">
+                                        <p>Tổng giá : </p>
+                                        <p id="total">0 vnđ</p>
+                                    </div>
+                                    <div class="total-thanhtoanhet">
+                                        <a>
+                                            <button id="thanhtoantatcaCart">
+                                                <p>Thanh toán tất cả</p>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="wrapper-middle-3">
+                            <div class="middle-3-title">
+                                <h2>Những hỗ trợ về thẻ thanh toán</h2>
+                            </div>
+                            <div class="middle-3-content">
+                                <div class="content-1">
+                                    <div>
+                                        <img src="../database/Image/paymentMethod(1).jpg">
+                                    </div>
+                                    <div>
+                                        <p>Thẻ VISA được cung cấp các đặc quyền chỉ dành cho người nước ngoài và sẽ được hỗ trợ về mặt bảo dưỡng xe cũng như là vận chuyển</p>
+                                    </div>
+                                </div> 
+                                <div class="content-2">
+                                    <div>
+                                        <img src="../database/Image/paymentMethod(2).png">
+                                    </div>
+                                    <div>
+                                        <p>Thẻ MasterCard là một trong nữa loại thẻ hữu dụng nhất cho việc mua sắm ngoài nước và được hỗ trợ trả góp lãi xuất thấp đối với Maserati</p>
+                                    </div>
+                                </div>
+                                <div class="content-3">
+                                    <div>
+                                        <img src="../database/Image/paymentMethod(3).jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <p>Thẻ JBC là một ngân hàng Nhật Bản nay đã được Maserati cấp quyền thanh toán đối với mọi loại xe và được hỗ trợ vận chuyển an toàn</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- wrapper bottom -->
+                    <div id="bottom">
+                            <div class="bottom-top">
+                                <div class="top-1">
+                                    <div class="top-1-div1">
+                                        <i class="fa-solid fa-arrow-pointer"></i>
+                                        <p>Nhập zip code của bạn</p>
+                                    </div>
+                                    <div class="top-1-div2">
+                                        <div class="">
+                                            
+                                        </div>
+                                        <div>
+                                            <p>Xây dựng sự sở hữu</p>
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="top-2">
+                                    <div>
+                                        <i class="fa-solid fa-car"></i>
+                                        <p>Xây dựng sự sở hữu</p>
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-id-card"></i>
+                                        <p>Kiểm tra bằng lái</p>
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                                <div class="top-3">
+                                    <div>
+                                        <i class="fa-solid fa-money-bill-wave"></i>
+                                        <p>Trích dẫn</p>
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <p>Vị trí</p>
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-middle">
+                                <div class="bottom-middle-1">
+                                    <div>
+                                        <img src="../database/Image/maserati.png">
+                                    </div>    
+                                </div>
+                                <div class="bottom-middle-2">
+                                    <div class="middle-2-element">
+                                        <li><i class="fa-solid fa-chevron-down"></i><p>Mẫu xe</p></li>
+                                        <li><i class="fa-solid fa-chevron-down"></i><p>Thương hiệu</p></li>
+                                        <li><i class="fa-solid fa-chevron-down"></i><p>Quyền sở hữu</p></li>
+                                        <li><i class="fa-solid fa-chevron-down"></i><p>Ngựa</p></li>
+                                    </div>
+                                    <div class="middle-2-element">
+                                        <li>
+                                            <p>Dịch vụ</p>
+                                        </li>
+                                        <li>
+                                            <p>Thể loại</p>
+                                        </li>
+                                        <li>
+                                            <p>Vị trí thỏa thuận</p>
+                                        </li>
+                                        <li>
+                                            <p>Xây dựng và giá</p>
+                                        </li>
+                                    </div>
+                                    <div class="middle-2-element">
+                                        <li><p>Nhận công bố</p></li>
+                                        <li><p>Liên hệ</p></li>
+                                        <li><p>Bài báo mới</p></li>
+                                        <li><p>Khả năng tương thích</p></li>
+                                    </div>
+                                    <div class="middle-2-element">
+                                        <p>Đặt hẹn</p>
+                                        <div>
+                                            <p>Đăng ký sở hữu</p>
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-bottom">
+                                <div>
+                                    <i class="fa-solid fa-earth-asia"></i>
+                                    <p>Website Thế Giới</p>
+                                </div>
+                                <div class="list-socialmedia">
+                                    <div>
+                                        <p>Theo dõi mạng xã hội</p>
+                                    </div>
+                                    <div>
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                        <i class="fa-brands fa-instagram"></i>
+                                        <i class="fa-brands fa-youtube"></i>
+                                        <i class="fa-brands fa-tiktok"></i>
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>Ghi chú và quyền riêng tư</p>
+                                </div>
+                                <div>
+                                    <p>Cài đặt Cookies</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+    </div>
+
+    <!-- body ghim -->
+    <div id="body-ghim">
+        <div class="wrapper-body-ghim">
+
+            <!-- wrapper-thongbao -->
+            <div class="wrapper-thongbao">
+                <p>Xóa Ghim Thành Công</p>
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+
+            <!--wrapper-top-->
+            <div class="wrapper-top">
+                <div class="top">
+                    <!--top-icon-->
+                    <div class="top-box">
+                        <div class="top-icon-img">
+                            <div>
+                                <img src="../database/Image/maserati.png" alt="#">
+                            </div>
+                        </div>
+                        <div class="top-icon-nav">
+                            <ul>
+                                <li>
+                                    <p id="homeGhim"><a>Trang chủ</a></p>
+                                </li>
+                                <li>
+                                    <p id="timkiemGhim"><a>Tìm kiếm</a></p>
+                                </li>
+                                <li>
+                                    <p id="thongtinGhim">Thông tin</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="top-icon-user">
+                            <div id="cartGhim">
+                                    <i class="fa-solid fa-money-check-dollar"></i>
+                                    <div id="cart-quantity">
+                                        <p class="quantity-cart">0</p>
+                                    </div>
+                            </div>
+                            <div id="heart">
+                                <i class="fa-solid fa-thumbtack"></i>
+                                <div id="heart-quantity">
+                                    <p class="quantity-ghim">0</p>
+                                </div>
+                            </div>
+                            <div id="userGhim">
+                                <a >
+                                    <i class="fa-solid fa-circle-user"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <!--wrapper-middle-->
+            <div id="wrapper-middle">
+                <div class="wrapper-middle-1">
+                    <div class="middle-1-nav">
+                        <div class="nav-list">
+                            <ul>
+                                <li>
+                                    <p>Trang chủ</p>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </li>
+                                <li>
+                                    <p>Trang tìm kiếm</p>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </li>
+                                <li>
+                                    <p>Thông tin xe</p>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </li>
+                                <li>
+                                    <p>Ghim</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrapper-middle-2">
+                    <div class="middle-2-title">
+                        <h2>Danh Sách Mẫu Xe Đã Ghim Của Bạn</h2>
+                    </div>
+                    <div class="middle-2-listGhim">
+                        <div class="listGhim-box">
+                            <ul class="ul-list">
+                                <!-- <li class="list-item">
+                                    <div class="list-item-img">
+                                        <div class="item-img-top">
+                                            <img src="./911-carrera-4.png">
+                                        </div>
+                                        <div class="item-img-bottom">
+                                            <div>
+                                                <p>STT : </p>
+                                                <p>1</p>
+                                            </div>
+                                            <div>
+                                                <button>
+                                                    <i class="fa-solid fa-dollar-sign"></i>
+                                                </button>
+                                            </div>
+                                            <div>
+                                                <button>
+                                                    <i class="fa-solid fa-money-check-dollar"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-item-content">
+                                        <ul>
+                                            <li>
+                                                <p>Tên mẫu</p>
+                                                <p>718 Boxster S</p>
+                                            </li>
+                                            <li>
+                                                <p>Công suât</p>
+                                                <p>375 PS (220kW)</p>
+                                            </li>
+                                            <li>
+                                                <p>Cao</p>
+                                                <p>1295mm</p>
+                                            </li>
+                                            <li>
+                                                <p>Dài</p>
+                                                <p>4950mm</p>
+                                            </li>
+                                            <li>
+                                                <p>Mô men xoắn cực đại</p>
+                                                <p>380 Nm</p>
+                                            </li>
+                                            <li>
+                                                <p>Tăng tốc từ 0 - 100 km/giờ</p>
+                                                <p>3.7 giây</p>
+                                            </li>
+                                            <li>
+                                                <p>Tốc độ tối đa</p>
+                                                <p>300 km/giờ</p>
+                                            </li>
+                                            <li>
+                                                <p>Tiêu thụ nhiên liệu kết hợp (lít/100km)</p>
+                                                <p>8.1</p>
+                                            </li>
+                                            <li>
+                                                <p>Lượng khí thải CO2 (g/km)</p>
+                                                <p>185</p>
+                                            </li>
+                                            <li>
+                                                <p>Giá tiêu chuẩn</p>
+                                                <p>8.530.000.000 vnđ</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="middle-item-pagination">
+                    <div class="pagination-box">
+                        <ul>
+                            <!-- <li class="btn prev"><span><i class="fa-solid fa-chevron-left"></i> Prev</span></li>
+
+                            <li class="numb active"><span>1</span></li>
+                            <li class="numb"><span>2</span></li>
+                            <li class="dots"><span>...</span></li>
+                            <li class="numb"><span>4</span></li>
+                            <li class="numb"><span>5</span></li>
+                            <li class="dots"><span>...</span></li>
+                            <li class="numb"><span>7</span></li>
+
+                            <li class="btn next"><span> Next<i class="fa-solid fa-chevron-right"></i></span></li> -->
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--wrapper-middle-second-->
+            <div id="middle-second">
+                <div class="middle-second-title">
+                    <h2>Một số bài báo liên quan</h2>
+                </div>
+                <div class="middle-second-content">
+                    <div class="content-item">
+                        <div>
+                            <img src="../database/Image/sukien(1).png">    
+                        </div>
+                        <div>
+                            <h4>Ưu đãi Bộ sưu tập Thời trang từ 07.11.2023 đến 01.01.2024
+                            </h4>
+                            <p>Giống như các dòng xe Maserati, phụ kiện trong Bộ sưu tập thời trang Maserati là đại diện của tinh thần thể thao và phong cách sống năng động. </p>
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <div>
+                            <img src="../database/Image/sukien(2).jpg">    
+                        </div>
+                        <div>
+                            <h4>Lều dã ngoại – Phụ kiện Tequipment</h4>
+                            <p>Lều dã ngoại là một trong những phụ kiện mới và chính hãng có phần vỏ cao cấp được phát triển tại Trung tâm Phát triển Weissach và được đồng thiết kế bởi Studio F.A. tại thị trấn Zell am See. </p>
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <div>
+                            <img src="../database/Image/sukien(3).jpg">    
+                        </div>
+                        <div>
+                            <h4>Maserati trở lại đường đua</h4>
+                            <p>Sự trở lại sau gần vài năm vắng bóng ở đường đua số một của thế giới, chờ xem sự trở lại sẽ đạt phong độ cực đỉnh thế nào của hãng xe giàu truyền thống Maserati</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--wrapper-bottom-->
+            <div id="bottom">
+                <div class="bottom-top">
+                    <div class="top-1">
+                        <div class="top-1-div1">
+                            <i class="fa-solid fa-arrow-pointer"></i>
+                            <p>Nhập zip code của bạn</p>
+                        </div>
+                        <div class="top-1-div2">
+                            <div class="">
+                                
+                            </div>
+                            <div>
+                                <p>Xây dựng sự sở hữu</p>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-2">
+                        <div>
+                            <i class="fa-solid fa-car"></i>
+                            <p>Xây dựng sự sở hữu</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-id-card"></i>
+                            <p>Kiểm tra bằng lái</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="top-3">
+                        <div>
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                            <p>Trích dẫn</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Vị trí</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-middle">
+                    <div class="bottom-middle-1">
+                        <div>
+                            <img src="../database/Image/maserati.png">
+                        </div>    
+                    </div>
+                    <div class="bottom-middle-2">
+                        <div class="middle-2-element">
+                            <li><i class="fa-solid fa-chevron-down"></i><p>Mẫu xe</p></li>
+                            <li><i class="fa-solid fa-chevron-down"></i><p>Thương hiệu</p></li>
+                            <li><i class="fa-solid fa-chevron-down"></i><p>Quyền sở hữu</p></li>
+                            <li><i class="fa-solid fa-chevron-down"></i><p>Ngựa</p></li>
+                        </div>
+                        <div class="middle-2-element">
+                            <li>
+                                <p>Dịch vụ</p>
+                            </li>
+                            <li>
+                                <p>Thể loại</p>
+                            </li>
+                            <li>
+                                <p>Vị trí thỏa thuận</p>
+                            </li>
+                            <li>
+                                <p>Xây dựng và giá</p>
+                            </li>
+                        </div>
+                        <div class="middle-2-element">
+                            <li><p>Nhận công bố</p></li>
+                            <li><p>Liên hệ</p></li>
+                            <li><p>Bài báo mới</p></li>
+                            <li><p>Khả năng tương thích</p></li>
+                        </div>
+                        <div class="middle-2-element">
+                            <p>Đặt hẹn</p>
+                            <div>
+                                <p>Đăng ký sở hữu</p>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-bottom">
+                    <div>
+                        <i class="fa-solid fa-earth-asia"></i>
+                        <p>Website Thế Giới</p>
+                    </div>
+                    <div class="list-socialmedia">
+                        <div>
+                            <p>Theo dõi mạng xã hội</p>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-tiktok"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Ghi chú và quyền riêng tư</p>
+                    </div>
+                    <div>
+                        <p>Cài đặt Cookies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- body information car -->
+    <div id="body-information-car">
+        <div class="wrapper-body-information-car">
+
+              <!-- wrapper top -->
+              <div class="wrapper-top">
+                <div class="top">
+                    <!--top-icon-->
+                    <div class="top-box">
+                        <div class="top-icon-img">
+                            <div>
+                                <img src="../database/Image/maserati.png" alt="#">
+                            </div>
+                        </div>
+                        <div class="top-icon-nav">
+                            <ul>
+                                <li>
+                                    <p><a id="homeInformationCar">Trang chủ</a></p>
+                                </li>
+                        <li>
+                            <p id="timkiemInformationCar"><a>Tìm kiếm</a></p>
+                        </li>
+                        <li>
+                            <p id="thongtinInformatioCar">Thông tin</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="top-icon-user">
+                    <div id="cartInformationCar">
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                        <div id="cart-quantity">
+                            <p class="quantity-cart">0</p>
+                        </div>
+                    </div>
+                    <div id="ghimInformationCar">
+                        <a id="">
+                            <i class="fa-solid fa-thumbtack"></i>
+                            <div id="heart-quantity">
+                                <p class="quantity-ghim">0</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="userInformationCar">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </div>
+                </div>
+            </div>
+      </div>
+
+      <!-- wrapper middle -->
+      <div id="wrapper-middle">
+
+        <!-- <div class="wrapper-middle-1">
+            <div class="middle-1-nav">
+                <div class="nav-list">
+                    <ul>
+                        <li>
+                            <p>Trang chủ</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </li>
+                        <li>
+                            <p>Trang tìm kiếm</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </li>
+                        <li>
+                            <p>Thông tin xe</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </li>
+                        <li>
+                            <p>781 Cayman Style Edition</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper-middle-2">
+            <div class="middle-2-top">
+                <h1>718 Cayman Style Edition</h1>
+                <h2>Giá tiêu chuẩn 4.203.000.000 vnđ</h2>
+            </div>
+            <div class="middle-2-mid">
+                <p>* Giá tiêu chuẩn bao gồm thuế nhập khẩu, thuế tiêu thụ đặc biệt và thuế giá trị gia tăng. Đối với dòng xe Panamera, Cayenne, Macan và Taycan giá tiêu chuẩn bao gồm thêm gói dịch vụ 4 năm bảo dưỡng. Bảng giá, thông số kỹ thuật và hình ảnh có thể thay đổi theo từng thời điểm mà không báo trước.</p>
+            </div>
+            <div class="middle-2-bottom">
+                <div class="bottom-congsuat">
+                    <p>300 PS (220 kW)</p>
+                    <p>Công suất</p>
+                </div>
+                <div class="bottom-tangtoc">
+                    <p>4,9 giây (4,7 giây vói gói Sport Chrono)</p>
+                    <p>Tăng tốc từ 0 - 100 km/giờ</p>
+                </div>
+                <div class="bottom-tocdo">
+                    <p>275 km/giờ</p>
+                    <p>Tốc độ tối đa</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper-middle-3">
+
+            <div class="middle-3-title">
+                <h1>Thông Số Kỹ Thuật</h1>   
+            </div>
+
+            <div class="middle-3-content">
+                <div class="content-top">
+                    <img src="./718-cayman-s.png">
+                    <p class="content-top-cao">Cao : 1.255mm</p>
+                    <p class="content-top-dai">Dài : 2.955mm</p>
+                </div>
+                <div class="content-middle">
+                    <div class="content-middle-list">
+                        <ul>
+                            <li>
+                                <p>Công suất</p>
+                                <div>300 PS (220kW)</div>
+                            </li>
+                            <li>
+                                <p>Mô men xoắn cực đại</p>
+                                <div>380 Nm</div>
+                            </li>
+                            <li>
+                                <p>Tăng tốc từ 0 - 100 km/giờ</p>
+                                <p>4,9 giây</p>
+                            </li>
+                            <li>
+                                <p>Tốc độ tối đa</p>
+                                <p>275 km/giờ</p>
+                            </li>
+                            <li>
+                                <p>Tiêu thụ nhiên liệu kết hợp (lít/100km)</p>
+                                <p>8,1</p>
+                            </li>
+                            <li>
+                                <p>Lượng khí thải C02 (g/km)</p>
+                                <p>185</p>
+                            </li>
+                            <li>
+                                <p>Giá tiêu chuẩn</p>
+                                <p>4.203.000.000 vnđ</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content-middle-bottom">
+                        <p>
+                            * Giá tiêu chuẩn bao gồm thuế nhập khẩu, thuế tiêu thụ đặc biệt và thuế giá trị gia tăng. Đối với dòng xe Panamera, Cayenne, Macan và Taycan giá tiêu chuẩn bao gồm thêm gói dịch vụ 4 năm bảo dưỡng. Bảng giá, thông số kỹ thuật và hình ảnh có thể thay đổi theo từng thời điểm mà không báo trước.
+                        </p>
+                    </div>
+                    <div class="content-middle-button">
+                        <div class="button-muangay">
+                            <button>
+                                <i class="fa-solid fa-dollar-sign"></i>
+                            </button>
+                        </div>
+                        <div class="button-cart">
+                            <button>
+                                <i class="fa-solid fa-money-check-dollar"></i>
+                            </button>
+                        </div>
+                        <div class="button-ghim">
+                            <button>
+                                <i class="fa-solid fa-thumbtack"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="middle-3-propose">
+                <div class="propose-title">
+                    <h2>Đề xuất mẫu xe tương tự</h2>
+                </div>
+                <div class="propose-list">
+                        <ul>
+                            <li>
+                                <button type="">
+                                    <div class="list-img">
+                                        <img src="./718-boxster-s.png">
+                                        <div></div>
+                                    </div>
+                                    <div class="list-name">
+                                        <p>Porsche Galaxy</p>
+                                    </div>
+                                </button>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </div> -->
+      </div>
+
+      <!-- wrapper middle second -->
+      <div id="wrapper-middle-second">
+          <div class="middle-second-title">
+              <h2>Chi nhánh Maserati Việt Nam</h2>
+                  </div>
+                  <div class="middle-second-chinhanh1">
+                      <div class="chinhanh1-img">
+                        <img src="../database/Image/chinhanh1.png" alt="">
+                      </div>
+                      <div class="chinhanh1-content">
+                        <h2>Trung tâm Maserati Sài Gòn</h2>
+                        <ul>
+                            <li>
+                                <p>Lô DVTM-5-6-7, đường số N1 và Lô DVTM-4, Đường số 7</p>
+                                <p>Khu Thương mại Nam, Khu Chế Xuất Tân Thuận</p>
+                                <p>Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh</p>
+                            </li>
+                            <li>
+                                <p>Điện thoại: +84 28 54141 911</p>
+                                <p>Email: info@porsche-vietnam.com</p>
+                            </li>
+                            <li>
+                        <h4>Hotline</h4>
+                        <p>Kinh doanh:+84 909 768 911</p>
+                        <p>Dịch vụ Hậu mãi: +84 907 096 911</p>
+                    </li>
+                    <li>
+                        <h4>Giờ làm việc</h4>
+                        <p>Phòng trưng bày</p>
+                        <p>Thứ Hai – Thứ Sáu: từ 8:30 đến 19:00</p>
+                        <p>Thứ Bảy, Chủ Nhật: từ 9:00 đến 17:00</p>
+                    </li>
+                </ul>
+              </div>
+          </div>
+          <div class="middle-second-chinhanh2">
+              <div class="chinhanh2-content">
+                <h2>Trung tâm Maserati Hà Nội</h2>
+                <ul>
+                    <li>
+                        <p>562 Nguyễn Văn Cừ</p>
+                        <p>Phường Gia Thụy, Quận Long Biên</p>
+                        <p>Hà Nội</p>
+                    </li>
+                    <li>
+                        <p>Điện thoại:  +84 24 62888 911</p>
+                        <p>Email: info@porsche-vietnam.com</p>
+                    </li>
+                    <li>
+                        <h4>Hotline</h4>
+                        <p>Kinh doanh: +84 903 168 911</p>
+                        <p>Dịch vụ Hậu mãi: +84 909 068 911</p>
+                    </li>
+                    <li>
+                        <h4>Giờ làm việc</h4>
+                        <p>Phòng trưng bày</p>
+                        <p>Thứ Hai – Thứ Sáu: từ 8:30 đến 19:00</p>
+                        <p>Thứ Bảy, Chủ Nhật: từ 9:00 đến 17:00</p>
+                    </li>
+                </ul>
+              </div>
+              <div class="chinhanh2-img">
+                <img src="../database/Image/chinhanh2.png" alt="">
+              </div>
+          </div>
+          <div class="middle-second-chinhanh3">
+              <div class="chinhanh3-img">
+                <img src="../database/Image/chinhanh3.png" alt="">
+              </div>
+              <div class="chinhanh3-content">
+                <h2>Maserati Studio Hà Nội</h2>
+                <ul>
+                    <li>
+                        <p>Porsche Studio Hà Nội</p>
+                        <p>Tầng 1, Tháp 1, Capital Place, 29 Liễu Giai, Ba Đình, Hà Nội</p>
+                    </li>
+                    <li>
+                        <p>Điện thoại:  +84 24 62888 911</p>
+                        <p>Email: info@porsche-vietnam.com</p>
+                    </li>
+                    <li>
+                        <h4>Hotline</h4>
+                        <p>+84 903 168 911</p>
+                    </li>
+                    <li>
+                        <h4>Giờ làm việc</h4>
+                        <p>Thứ Hai – Thứ Sáu: từ 8:30 đến 19:00</p>
+                    </li>
+                </ul>
+              </div>
+          </div>
+      </div>
+
+      <!-- wrapper bottom -->
+      <div id="bottom">
+            <div class="bottom-top">
+                <div class="top-1">
+                    <div class="top-1-div1">
+                        <i class="fa-solid fa-arrow-pointer"></i>
+                        <p>Nhập zip code của bạn</p>
+                    </div>
+                    <div class="top-1-div2">
+                        <div class="">
+                            
+                        </div>
+                        <div>
+                            <p>Xây dựng sự sở hữu</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-2">
+                    <div>
+                        <i class="fa-solid fa-car"></i>
+                        <p>Xây dựng sự sở hữu</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-id-card"></i>
+                        <p>Kiểm tra bằng lái</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="top-3">
+                    <div>
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                        <p>Trích dẫn</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Vị trí</p>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-middle">
+                <div class="bottom-middle-1">
+                    <div>
+                        <img src="../database/Image/maserati.png">
+                    </div>    
+                </div>
+                <div class="bottom-middle-2">
+                    <div class="middle-2-element">
+                        <li><i class="fa-solid fa-chevron-down"></i><p>Mẫu xe</p></li>
+                        <li><i class="fa-solid fa-chevron-down"></i><p>Thương hiệu</p></li>
+                        <li><i class="fa-solid fa-chevron-down"></i><p>Quyền sở hữu</p></li>
+                        <li><i class="fa-solid fa-chevron-down"></i><p>Ngựa</p></li>
+                    </div>
+                    <div class="middle-2-element">
+                        <li>
+                            <p>Dịch vụ</p>
+                        </li>
+                        <li>
+                            <p>Thể loại</p>
+                        </li>
+                        <li>
+                            <p>Vị trí thỏa thuận</p>
+                        </li>
+                        <li>
+                            <p>Xây dựng và giá</p>
+                        </li>
+                    </div>
+                    <div class="middle-2-element">
+                        <li><p>Nhận công bố</p></li>
+                        <li><p>Liên hệ</p></li>
+                        <li><p>Bài báo mới</p></li>
+                        <li><p>Khả năng tương thích</p></li>
+                    </div>
+                    <div class="middle-2-element">
+                        <p>Đặt hẹn</p>
+                        <div>
+                            <p>Đăng ký sở hữu</p>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-bottom">
+                <div>
+                    <i class="fa-solid fa-earth-asia"></i>
+                    <p>Website Thế Giới</p>
+                </div>
+                <div class="list-socialmedia">
+                    <div>
+                        <p>Theo dõi mạng xã hội</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-tiktok"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+                <div>
+                    <p>Ghi chú và quyền riêng tư</p>
+                </div>
+                <div>
+                    <p>Cài đặt Cookies</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- body user -->
+    <div id="body-user">
+        <div class="wrapper-body-user">
+
+            <!-- wrapper top -->
+            <div class="wrapper-top">
+              <div class="top">
+                <!--top-icon-->
+                        <div class="top-box">
+                            <div class="top-icon-img">
+                                <div>
+                                    <img src="../database/Image/maserati.png" alt="#">
+                                </div>
+                            </div>
+                            <div class="top-icon-nav">
+                                <ul>
+                                    <li>
+                                        <p id="trangchuUser"><a>Trang chủ</a></p>
+                                    </li>
+                                    <li>
+                                        <p id="timkiemUser"><a>Tìm kiếm</a></p>
+                                    </li>
+                                    <li>
+                                        <p id="thongtinUser">Thông tin</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                </div>
+
+            <!-- wrapper middle -->
+            <div id="wrapper-middle">
+              <div class="wrapper-middle-1">
+                        <div class="middle-1-nav">
+                            <div class="nav-list">
+                                <ul>
+                                    <li>
+                                        <p>Trang chủ</p>
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </li>
+                                    <li>
+                                        <p>Trang tìm kiếm</p>
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </li>
+                                    <li>
+                                        <p>Thông tin cá nhân</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+              <div class="wrapper-middle-2">
+
+                <!-- middle 2 information use -->
+                <div class="middle-2-information-user">
+                  <!-- <div class="user-image">
+                    <img src="./user.png" alt="">
+                    <button>
+                      <p>Đăng xuất</p>
+                    </button>
+                  </div>
+                  <div class="user-infor">
+                    <div>
+                      <p>Tên người dùng :</p>
+                      <p>Đoàn Văn Khoan</p>
+                    </div>
+
+                    <div>
+                      <p>Email :</p>
+                      <p>doanvankhoan124@gmail.com</p>
+                    </div>
+
+                    <div>
+                      <p>Giới tính :</p>
+                      <p>Nam</p>
+                    </div>
+
+                    <div>
+                      <p>Địa chỉ :</p>
+                      <p>287/21/21 Âu Dương Lân</p>
+                    </div>
+
+                    <div>
+                      <p>Số sản phẩm đã thanh toán :</p>
+                      <p>9</p>
+                    </div>
+
+                    <div>
+                      <p>Số sản phẩm đã mua :</p>
+                      <p>20</p>
+                    </div>
+                  </div> -->
+                </div>
+
+                <!-- middle 2 information payment -->
+                <div class="middle-2-information-payment">
+                  <div class="payment-nav">
+                    <ul>
+                      <li>
+                        <button id="btnDaDat" class="active">
+                          <p>Danh sách đã đặt</p>
+                        </button>
+                      </li>
+                      <li>
+                        <button id="btnDaMua">
+                          <p>Danh sách đã mua</p>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- payment list dat -->
+                  <div class="payment-list-dat">
+                    <div class="list-dat-box">
+                      <ul>
+                        <!-- <li class="list-dat-item">
+                          <div class="item-stt">
+                            <p>STT</p>
+                          </div>
+                          <div class="item-img">
+                            <p>Hình ảnh</p>
+                          </div>
+                          <div class="item-infor">
+                            <p>Thông tin xe</p>
+                          </div>
+                          <div class="item-information-more">
+                            <p>Xem thông tin</p>
+                          </div>
+                          <div class="item-information-payment">
+                            <p>Thanh toán</p>
+                          </div>
+                          <div class="item-status">
+                            <p>Trạng thái</p>
+                          </div>
+                        </li> -->
+
+                        <!-- <li class="list-dat-item">
+                          <div class="item-stt">
+                            <p>1</p>
+                          </div>
+                          <div class="item-img">
+                            <div>
+                              <img src="./cayenne.png" alt="">
+                            </div>
+                          </div>
+                          <div class="item-infor">
+                            <p>Cayenne</p>
+                            <p>12.050.000.000 vnđ</p>
+                          </div>
+                          <div class="item-information-more">
+                            <button>
+                              <p>Thông tin xe</p>
+                            </button>
+                          </div>
+                          <div class="item-information-payment">
+                            <p class="payment-dathanhtoan">Đã thanh toán</p>
+                          </div>
+                          <div class="item-status">
+                            <p class="payment-choxacnhan">Chờ xác nhận</p>
+                          </div>
+                        </li> -->
+                      </ul>
+                    </div>
+                  </div>
+
+
+                  <!-- payment list da mua -->
+                  <div class="payment-list-damua">
+                    <div class="list-damua-box">
+                      <ul>
+                        <!-- <li class="list-damua-item">
+                          <div class="item-stt">
+                            <p>STT</p>
+                          </div>
+                          <div class="item-img">
+                            <p>Hình ảnh</p>
+                          </div>
+                          <div class="item-infor">
+                            <p>Thông tin xe</p>
+                          </div>
+                          <div class="item-information-more">
+                            <p>Phương thức</p>
+                          </div>
+                          <div class="item-information-payment">
+                            <p>Thanh toán</p>
+                          </div>
+                          <div class="item-status">
+                            <p>Trạng thái</p>
+                          </div>
+                        </li>
+
+                        <li class="list-damua-item">
+                          <div class="item-stt">
+                            <p>1</p>
+                          </div>
+                          <div class="item-img">
+                            <div>
+                              <img src="./cayenne.png" alt="">
+                            </div>
+                          </div>
+                          <div class="item-infor">
+                            <p>Cayenne</p>
+                            <p>12.050.000.000 vnđ</p>
+                          </div>
+                          <div class="item-information-more">
+                            <p>Paypal</p>
+                          </div>
+                          <div class="item-information-payment">
+                            <p class="payment-dathanhtoan">Đã thanh toán</p>
+                          </div>
+                          <div class="item-status">
+                            <p class="payment-daxacnhan">Đang vận chuyển</p>
+                          </div>
+                        </li> -->
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div id="bottom">
+                    <div class="bottom-top">
+                        <div class="top-1">
+                            <div class="top-1-div1">
+                                <i class="fa-solid fa-arrow-pointer"></i>
+                                <p>Nhập zip code của bạn</p>
+                            </div>
+                            <div class="top-1-div2">
+                                <div class="">
+                                    
+                                </div>
+                                <div>
+                                    <p>Xây dựng sự sở hữu</p>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="top-2">
+                            <div>
+                                <i class="fa-solid fa-car"></i>
+                                <p>Xây dựng sự sở hữu</p>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-id-card"></i>
+                                <p>Kiểm tra bằng lái</p>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+                        <div class="top-3">
+                            <div>
+                                <i class="fa-solid fa-money-bill-wave"></i>
+                                <p>Trích dẫn</p>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>Vị trí</p>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-middle">
+                        <div class="bottom-middle-1">
+                            <div>
+                                <img src="../database/Image/maserati.png">
+                            </div>    
+                        </div>
+                        <div class="bottom-middle-2">
+                            <div class="middle-2-element">
+                                <li><i class="fa-solid fa-chevron-down"></i><p>Mẫu xe</p></li>
+                                <li><i class="fa-solid fa-chevron-down"></i><p>Thương hiệu</p></li>
+                                <li><i class="fa-solid fa-chevron-down"></i><p>Quyền sở hữu</p></li>
+                                <li><i class="fa-solid fa-chevron-down"></i><p>Ngựa</p></li>
+                            </div>
+                            <div class="middle-2-element">
+                                <li>
+                                    <p>Dịch vụ</p>
+                                </li>
+                                <li>
+                                    <p>Thể loại</p>
+                                </li>
+                                <li>
+                                    <p>Vị trí thỏa thuận</p>
+                                </li>
+                                <li>
+                                    <p>Xây dựng và giá</p>
+                                </li>
+                            </div>
+                            <div class="middle-2-element">
+                                <li><p>Nhận công bố</p></li>
+                                <li><p>Liên hệ</p></li>
+                                <li><p>Bài báo mới</p></li>
+                                <li><p>Khả năng tương thích</p></li>
+                            </div>
+                            <div class="middle-2-element">
+                                <p>Đặt hẹn</p>
+                                <div>
+                                    <p>Đăng ký sở hữu</p>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-bottom">
+                        <div>
+                            <i class="fa-solid fa-earth-asia"></i>
+                            <p>Website Thế Giới</p>
+                        </div>
+                        <div class="list-socialmedia">
+                            <div>
+                                <p>Theo dõi mạng xã hội</p>
+                            </div>
+                            <div>
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                                <i class="fa-brands fa-tiktok"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Ghi chú và quyền riêng tư</p>
+                        </div>
+                        <div>
+                            <p>Cài đặt Cookies</p>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </div>
+    </div>
+    
+    <!-- body thanh toan current -->
+    <div id="body-thanhtoan-current">
+        <div class="wrapper-body-thanhtoan-current">
+
+            <!-- wrapper xac nhan -->
+            <div class="wrapper-xacnhan">
+              <div class="wrapper-xacnhan-title">
+                <p>Xác nhận thanh toán</p>
+              </div>
+              <div class="wrapper-xacnhan-content">
+                <button id="iconTuChoi">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+                <button id="iconXacNhan">
+                  <i class="fa-solid fa-check"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- wrapper top -->
+            <div class="wrapper-top">
+
+              <div class="wrapper-top-back">
+                <a>
+                  <i class="fa-solid fa-chevron-left"></i>
+                  <p style="cursor: pointer;" id="dsttThanhToanCurrent">Danh sách thanh toán</p>
+                </a>
+              </div>
+
+              <div class="wrapper-top-icon">
+                <div>
+                  <img src="../database/Image/maserati.png" alt="">
+                </div>
+              </div>
+
+            </div>
+
+            <!-- wrapper middle -->
+            <div class="wrapper-middle">
+              <div class="wrapper-middle-box">
+
+                <!-- middle title -->
+                <div class="middle-title">
+                  <h2>Hóa Đơn</h2>
+                </div>
+
+                <!-- middle content -->
+                <div class="middle-content">
+                  <div class="content-box">
+                    <ul>
+                      <!-- <li>
+                        <div class="box-stt">
+                          <p>STT</p>
+                        </div>
+                        <div class="box-tenmau">
+                          <p>Tên Mẫu</p>
+                        </div>
+                        <div class="box-gia">
+                          <p>Giá Tiền</p>
+                        </div>
+                        <div class="box-soluong">
+                          <p>Số lượng</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="box-stt">
+                          <p>1</p>
+                        </div>
+                        <div class="box-tenmau">
+                          <p>Taycan GTS</p>
+                        </div>
+                        <div class="box-gia">
+                          <p>10.500.000.000 vnđ</p>
+                        </div>
+                        <div class="box-soluong">
+                          <button>
+                            <i class="fa-solid fa-minus"></i>
+                          </button>
+                          <p>3</p>
+                          <button>
+                            <i class="fa-solid fa-plus"></i>
+                          </button>
+                        </div>
+                      </li> -->
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- middle total -->
+                <div class="middle-total">
+                  <div class="total-box">
+                    <ul>
+                      <!-- <li>
+                        <p>Tổng số lượng</p>
+                        <p>x9</p>
+                      </li>
+                      <li>
+                        <p>Phí vận chuyển (xe/20.000.000)</p>
+                        <p>100.000.000 vnđ</p>
+                      </li>
+                      <li>
+                        <p>Phí dịch vụ</p>
+                        <p>10.000.00 vnđ</p>
+                      </li>
+                      <li>
+                        <p>Phí cọc bảo dưỡng xe</p>
+                        <p>50.000.000 vnđ</p>
+                      </li>
+                      <li>
+                        <p>Tổng giá xe</p>
+                        <p>50.000.000.000 vnđ</p>
+                      </li>
+                      <li>
+                        <p>Tổng Thanh Toán</p>
+                        <p>50.530.000.000 vnđ</p>
+                      </li> -->
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- middle information payment -->
+                <div class="middle-information-payment">
+
+                  <div class="information-title">
+                    <h2>Thông tin thanh toán</h2>
+                  </div>
+
+                  <div class="information-form">
+
+                    <div class="form-sothe">
+                      <div>
+                        <i class="fa-solid fa-star-of-life"></i>
+                        <p>Số thẻ</p>
+                      </div>
+                      <input id="sothe" type="text" placeholder="Số thẻ">
+                      <p id="sotheA">Vui lòng không bỏ trống</p>
+                      <p id="sotheB">Vui lòng nhập đủ 10 ký tự</p>
+                    </div>
+
+                    <div class="form-tentrenthe">
+                      <div>
+                        <i class="fa-solid fa-star-of-life"></i>
+                        <p>Tên trên thẻ</p>
+                      </div>
+                      <input id="tentrenthe" type="text" placeholder="Tên trên thẻ">
+                      <p id="tentrentheA">Vui lòng không bỏ trống</p>
+                      <p id="tentrentheB">Vui lòng nhập tối thiểu 5 ký tự</p>
+                    </div>
+
+                    <div class="form-ngayhethan">
+                      <div>
+                        <i class="fa-solid fa-star-of-life"></i>
+                        <p>Ngày hết hạn</p>
+                      </div>
+                      <input id="ngayhethan" type="date" placeholder="mm/dd/yyyy">
+                      <p id="ngayhethanA">Vui lòng không bỏ trống</p>
+                      <p id="ngayhethanB">Năm phải lớn hơn năm hiện tại</p>
+                    </div>
+
+                    <div class="form-cvv">
+                      <div>
+                        <i class="fa-solid fa-star-of-life"></i>
+                        <p>CVV</p>
+                      </div>
+                      <input id="cvv" type="text" placeholder="CVV">
+                      <p id="cvvA">Vui lòng không bỏ trống</p>
+                      <p id="cvvB">Vui lòng nhập đúng 3 ký tự</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- middle method -->
+                <div class="middle-method">
+                  <div class="method-title">
+                    <h2>Phương thức thanh toán</h2>
+                  </div>
+
+                  <div class="method-list">
+                    <ul>
+                      <li>
+                        <input class="checkedMethod" type="radio" name="method" value="VISA" checked>
+                        <img src="../database/Image/paymentMethod(1).png" alt="">
+                      </li>
+                      <li>
+                        <input class="checkedMethod" type="radio" name="method" value="Master Card">
+                        <img src="../database/Image/paymentMethod(2).png" alt="">
+                      </li>
+                      <li>
+                        <input class="checkedMethod" type="radio" name="method" value="JCB">
+                        <img src="../database/Image/paymentMethod(3).jpg" alt="">
+                      </li>
+                      <li>
+                        <input class="checkedMethod" type="radio" name="method" value="UAPT">
+                        <img src="../database/Image/paymentMethod(4).png" alt="">
+                      </li>
+                      <li>
+                        <input class="checkedMethod" type="radio" name="method" value="Paypal">
+                        <img src="../database/Image/paymentMethod(5).png" alt="">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="middle-end">
+                  <button id="thanhtoan">
+                    <p>Thanh Toán</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- wrapper bottom -->
+            <div class="wrapper-bottom">
+              <div>
+                <ul>
+                  <li>Điều khoản sử dụng</li>
+                  <li>Hợp đồng thương mại</li>
+                  <li>Chi tiết triển khai</li>
+                  <li>Liên hệ hợp tác</li>
+                  <li>Kinh tế</li>
+                </ul>
+              </div>
+              <div class="bottom-2">
+                <div class="copy-right">
+                  <p>Copy right</p>
+                  <i class="fa-solid fa-copyright"></i>
+                  <p>maserati12042004@gmail.com</p>
+                </div>
+              </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+
+    <!-- body thanh toan -->
+    <div id="body-thanhtoan">
+        <!-- body thanh toan current -->
+                <div class="wrapper-body-thanhtoan">
+
+                    <!-- wrapper xac nhan -->
+                    <div class="wrapper-xacnhan">
+                      <div class="wrapper-xacnhan-title">
+                        <p>Xác nhận thanh toán</p>
+                      </div>
+                      <div class="wrapper-xacnhan-content">
+                        <button id="iconTuChoi">
+                          <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <button id="iconXacNhan">
+                          <i class="fa-solid fa-check"></i>
+                        </button>
+                      </div>
+            </div>
+
+            <!-- wrapper top -->
+            <div class="wrapper-top">
+
+              <div class="wrapper-top-back">
+                <a style="cursor: pointer">
+                  <i class="fa-solid fa-chevron-left"></i>
+                  <p id="dsttThanhToan">Danh sách thanh toán</p>
+                </a>
+              </div>
+
+              <div class="wrapper-top-icon">
+                <div>
+                  <img src="../database/Image/maserati.png" alt="">
+                </div>
+              </div>
+
+            </div>
+
+            <!-- wrapper middle -->
+            <div class="wrapper-middle">
+              <div class="wrapper-middle-box">
+
+                <!-- middle title -->
+                <div class="middle-title">
+                  <h2>Hóa Đơn</h2>
+                </div>
+
+                <!-- middle content -->
+                <div class="middle-content">
+                  <div class="content-box">
+                    <ul>
+                      <!-- <li>
+                        <div class="box-stt">
+                          <p>STT</p>
+                        </div>
+                        <div class="box-tenmau">
+                          <p>Tên Mẫu</p>
+                        </div>
+                        <div class="box-gia">
+                          <p>Giá Tiền</p>
+                        </div>
+                        <div class="box-soluong">
+                          <p>Số lượng</p>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="box-stt">
+                          <p>1</p>
+                        </div>
+                        <div class="box-tenmau">
+                          <p>Taycan GTS</p>
+                        </div>
+                        <div class="box-gia">
+                          <p>10.500.000.000 vnđ</p>
+                        </div>
+                        <div class="box-soluong">
+                          <button>
+                            <i class="fa-solid fa-minus"></i>
+                          </button>
+                          <p>3</p>
+                          <button>
+                            <i class="fa-solid fa-plus"></i>
+                          </button>
+                        </div>
+                      </li> -->
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- middle total -->
+                <div class="middle-total">
+                  <div class="total-box">
+                    <ul>
+                      <!-- <li>
+                        <p>Tổng số lượng</p>
+                        <p>x9</p>
+                      </li>
+                      <li>
+                        <p>Phí vận chuyển (xe/20.000.000)</p>
+                        <p>100.000.000 vnđ</p>
+                      </li>
+                      <li>
+                        <p>Phí dịch vụ</p>
+                        <p>10.000.00 vnđ</p>
+                      </li>
+                      <li>
+                        <p>Phí cọc bảo dưỡng xe</p>
+                        <p>50.000.000 vnđ</p>
+                      </li>
+                      <li>
+                        <p>Tổng giá xe</p>
+                        <p>50.000.000.000 vnđ</p>
+                      </li>
+                      <li>
+                        <p>Tổng Thanh Toán</p>
+                        <p>50.530.000.000 vnđ</p>
+                      </li> -->
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- middle information payment -->
+                <div class="middle-information-payment">
+
+                  <div class="information-title">
+                    <h2>Thông tin thanh toán</h2>
+                  </div>
+
+                  <div class="information-form">
+
+                    <div class="form-sothe">
+                      <div>
+                        <i class="fa-solid fa-star-of-life"></i>
+                        <p>Số thẻ</p>
+                      </div>
+                      <input id="sothe" type="text" placeholder="Số thẻ">
+                      <p id="sotheA">Vui lòng không bỏ trống</p>
+                      <p id="sotheB">Vui lòng nhập đủ 10 ký tự</p>
+                    </div>
+
+                    <div class="form-tentrenthe">
+                      <div>
+                        <i class="fa-solid fa-star-of-life"></i>
+                        <p>Tên trên thẻ</p>
+                      </div>
+                      <input id="tentrenthe" type="text" placeholder="Tên trên thẻ">
+                      <p id="tentrentheA">Vui lòng không bỏ trống</p>
+                      <p id="tentrentheB">Vui lòng nhập tối thiểu 5 ký tự</p>
+                    </div>
+
+                    <div class="form-ngayhethan">
+                      <div>
+                        <i class="fa-solid fa-star-of-life"></i>
+                        <p>Ngày hết hạn</p>
+                      </div>
+                      <input id="ngayhethan" type="date" placeholder="mm/dd/yyyy">
+                      <p id="ngayhethanA">Vui lòng không bỏ trống</p>
+                      <p id="ngayhethanB">Năm phải lớn hơn năm hiện tại</p>
+                    </div>
+
+                    <div class="form-cvv">
+                      <div>
+                        <i class="fa-solid fa-star-of-life"></i>
+                        <p>CVV</p>
+                      </div>
+                      <input id="cvv" type="text" placeholder="CVV">
+                      <p id="cvvA">Vui lòng không bỏ trống</p>
+                      <p id="cvvB">Vui lòng nhập đúng 3 ký tự</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- middle method -->
+                <div class="middle-method">
+                  <div class="method-title">
+                    <h2>Phương thức thanh toán</h2>
+                  </div>
+
+                  <div class="method-list">
+                    <ul>
+                      <li>
+                        <input class="checkedMethod" type="radio" name="method" value="VISA" checked>
+                        <img src="../database/Image/paymentMethod(1).png" alt="">
+                      </li>
+                      <li>
+                        <input class="checkedMethod" type="radio" name="method" value="Master Card">
+                        <img src="../database/Image/paymentMethod(2).png" alt="">
+                      </li>
+                      <li>
+                        <input class="checkedMethod" type="radio" name="method" value="JCB">
+                        <img src="../database/Image/paymentMethod(3).jpg" alt="">
+                      </li>
+                      <li>
+                        <input class="checkedMethod" type="radio" name="method" value="UAPT">
+                        <img src="../database/Image/paymentMethod(4).png" alt="">
+                      </li>
+                      <li>
+                        <input class="checkedMethod" type="radio" name="method" value="Paypal">
+                        <img src="../database/Image/paymentMethod(5).png" alt="">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="middle-end">
+                  <button id="thanhtoan">
+                    <p>Thanh Toán</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- wrapper bottom -->
+            <div class="wrapper-bottom">
+              <div>
+                <ul>
+                  <li>Điều khoản sử dụng</li>
+                  <li>Hợp đồng thương mại</li>
+                  <li>Chi tiết triển khai</li>
+                  <li>Liên hệ hợp tác</li>
+                  <li>Kinh tế</li>
+                </ul>
+              </div>
+              <div class="bottom-2">
+                <div class="copy-right">
+                  <p>Copy right</p>
+                  <i class="fa-solid fa-copyright"></i>
+                  <p>maserati12042004@gmail.com</p>
+                </div>
+              </div>
+        </div>
+
+          </div>
+        </div>
+    </div>
+</body>
+
+<script src="storeONCLICK.js"></script>
+<script src="../database/Image/databaseCar.js"></script>
+<!-- <script src="homeUserCars.js"></script>
+<script src="homeUserCart.js"></script>
+<script src="homeUserCart2.js"></script>
+<script src="homeUserDaDat.js"></script>
+<script src="homeUserDaMua.js"></script>
+<script src="homeUserFilter.js"></script>
+<script src="homeUserGhim.js"></script>
+<script src="homeUserGhim2.js"></script>
+<script src="homeUserGhimXoa.js"></script>
+<script src="homeUserHome.js"></script>
+<script src="homeUserInformation.js"></script>
+<script src="homeUserInformation2.js"></script>
+<script src="homeUserLogin.js"></script>
+<script src="homeUserModel.js"></script>
+<script src="homeUserMoreInformation.js"></script>
+<script src="homeUserOnclick.js"></script>
+<script src="homeUserPropose.js"></script>
+<script src="homeUserRegister.js"></script>
+<script src="homeUserReloadQuantity.js"></script>
+<script src="homeUserThanhToanCurrent.js"></script>
+<script src="homeUserThanhToanForm.js"></script>
+<script src="homeUserThanhToanFormCurrent.js"></script>
+<script src="homeUserThanhToanHoaDon.js"></script> -->
+</html>

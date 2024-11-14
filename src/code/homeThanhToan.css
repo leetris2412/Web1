@@ -1,0 +1,642 @@
+*{
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#body-thanhtoan{
+  display: none;
+}
+
+.wrapper-body-thanhtoan{
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: content;
+}
+
+.wrapper-body-thanhtoan .wrapper-xacnhan{
+  width: 400px;
+  height: 200px;
+  background-color: white;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 2px 4px 5px black;
+  border-radius: 20px;
+  transition: all .75s ease;
+}
+
+.wrapper-body-thanhtoan .wrapper-xacnhan .wrapper-xacnhan-title{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.wrapper-body-thanhtoan .wrapper-xacnhan .wrapper-xacnhan-title p{
+  font-size: 18px;
+  border-bottom: 2px solid whitesmoke;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.wrapper-body-thanhtoan .wrapper-xacnhan .wrapper-xacnhan-content{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  height: 40px;
+}
+
+.wrapper-body-thanhtoan .wrapper-xacnhan .wrapper-xacnhan-content button{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  cursor: pointer;
+  transition: all .75s ease;
+  border-radius: 15px;
+  box-shadow: 2px 4px 5px black;
+}
+
+.wrapper-body-thanhtoan .wrapper-xacnhan .wrapper-xacnhan-content button:hover i{
+  color: black;
+}
+
+.wrapper-body-thanhtoan .wrapper-xacnhan .wrapper-xacnhan-content button i{
+  font-size: 23px;
+  color: whitesmoke;
+  transition: all .75s ease;
+}
+
+.wrapper-body-thanhtoan .wrapper-xacnhan .wrapper-xacnhan-content button:first-child{
+  background-color: darkred;
+}
+
+.wrapper-body-thanhtoan .wrapper-xacnhan .wrapper-xacnhan-content button:last-child{
+  background-color: limegreen;
+}
+
+.wrapper-body-thanhtoan .wrapper-top{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all .75s ease;
+  background-color: whitesmoke;
+  position: fixed;
+  top: 0;
+}
+
+.wrapper-body-thanhtoan .wrapper-top .wrapper-top-back{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.wrapper-body-thanhtoan .wrapper-top .wrapper-top-back a{
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 100%;
+}
+
+.wrapper-body-thanhtoan .wrapper-top .wrapper-top-back:hover p,
+.wrapper-body-thanhtoan .wrapper-top .wrapper-top-back:hover i
+{
+  color: goldenrod;
+}
+
+.wrapper-body-thanhtoan .wrapper-top .wrapper-top-back a p{
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all .75s ease;
+}
+
+.wrapper-body-thanhtoan .wrapper-top .wrapper-top-back a i{
+  font-size: 15px;
+  color: black;
+  transition: all .75s ease;
+}
+
+.wrapper-body-thanhtoan .wrapper-top .wrapper-top-icon{
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper-body-thanhtoan .wrapper-top .wrapper-top-icon div{
+  width: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-body-thanhtoan .wrapper-top .wrapper-top-icon div img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+/* Wrapper Middle */
+.wrapper-body-thanhtoan .wrapper-middle{
+  margin-top: 50px;
+  width: 100%;
+  padding: 0 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper-body-thanhtoan .wrapper-middle .wrapper-middle-box{
+  width: 100%;
+  background-color: rgba(255, 255, 255, .65);
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.wrapper-body-thanhtoan .wrapper-middle .wrapper-middle-box .middle-title{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.wrapper-body-thanhtoan .wrapper-middle .wrapper-middle-box .middle-title h2{
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-bottom: 2px solid black;
+}
+
+.wrapper-body-thanhtoan .wrapper-middle .wrapper-middle-box .middle-content{
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-body-thanhtoan .wrapper-middle .wrapper-middle-box .middle-content .content-box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-body-thanhtoan .wrapper-middle .wrapper-middle-box .middle-content .content-box ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  padding: 0 20px;
+  gap: 5px;
+}
+
+.wrapper-body-thanhtoan .wrapper-middle .wrapper-middle-box .middle-content .content-box ul li{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 10% 35% 35% 20%;
+  border-bottom: 1px solid black;
+}
+
+.wrapper-body-thanhtoan .wrapper-middle .wrapper-middle-box .middle-content .content-box ul li:last-child{
+  border: none;
+}
+
+.wrapper-body-thanhtoan .wrapper-middle .wrapper-middle-box .middle-content .content-box ul li div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+
+.wrapper-body-thanhtoan .wrapper-middle .wrapper-middle-box .middle-content .content-box ul li div:last-child{
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.wrapper-body-thanhtoan .wrapper-middle .wrapper-middle-box .middle-content .content-box ul li div:last-child button{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkblue;
+}
+
+.wrapper-body-thanhtoan .wrapper-middle .wrapper-middle-box .middle-content .content-box ul li div:last-child button i{
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.wrapper-body-thanhtoan .wrapper-middle .middle-total{
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.wrapper-body-thanhtoan .wrapper-middle .middle-total .total-box{
+  border-top: 3px solid black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper-body-thanhtoan .wrapper-middle .middle-total .total-box ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.wrapper-body-thanhtoan .wrapper-middle .middle-total .total-box ul li{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.wrapper-body-thanhtoan .wrapper-middle .middle-total .total-box ul li:last-child p:last-child{
+  font-size: 20px;
+  font-weight: 600;
+  color: darkred;
+}
+
+.wrapper-body-thanhtoan .wrapper-middle .middle-total .total-box ul li:last-child p:first-child{
+  color: darkred;
+}
+
+.wrapper-body-thanhtoan .wrapper-middle .middle-total .total-box ul li p:first-child{
+  font-weight: 600;
+}
+
+.wrapper-body-thanhtoan .wrapper-middle .method-title{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper-body-thanhtoan .wrapper-middle .method-title h2{
+  margin-top: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 2px solid black;
+  letter-spacing: 1px;
+}
+
+.wrapper-body-thanhtoan .wrapper-middle .method-list{
+  width: 100%;
+  margin-top: 50px;
+}
+
+.wrapper-body-thanhtoan .wrapper-middle .method-list ul{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  padding: 0 20px;
+  margin: 0;
+  list-style: none;
+}
+
+.wrapper-body-thanhtoan .wrapper-middle .method-list ul li{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10% 90%;
+  gap: 5px;
+}
+
+.wrapper-body-thanhtoan .wrapper-middle .method-list ul li img{
+  width: 100%;
+  height: 60px;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-body-thanhtoan .wrapper-middle .method-list ul li input{
+  background-color: red;
+}
+
+
+.wrapper-body-thanhtoan .wrapper-middle .middle-end{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  height: 50px;
+}
+
+.wrapper-body-thanhtoan .wrapper-middle .middle-end button{
+  width: 20%;
+  height: 100%;
+  background-color: goldenrod;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all .75s ease;
+}
+
+.wrapper-body-thanhtoan .wrapper-middle .middle-end button p{
+  color: whitesmoke;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.wrapper-body-thanhtoan .wrapper-middle .middle-end button:hover{
+  background-color: darkred;
+}
+
+
+.wrapper-body-thanhtoan .wrapper-bottom{
+  margin-top: 50px;
+  width: 100%;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.wrapper-body-thanhtoan .wrapper-bottom div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-body-thanhtoan .wrapper-bottom div ul{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  list-style: none;
+}
+.wrapper-body-thanhtoan .wrapper-bottom div ul li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.wrapper-body-thanhtoan .wrapper-bottom .bottom-2{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper-body-thanhtoan .wrapper-bottom .copy-right{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: 5px;
+  font-size: 12px;
+}
+
+/* Middle Information Payment */
+
+.wrapper-body-thanhtoan .middle-information-payment{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.wrapper-body-thanhtoan .middle-information-payment .information-title{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper-body-thanhtoan .middle-information-payment .information-title h2{
+  border-bottom: 2px solid black;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.wrapper-body-thanhtoan .middle-information-payment .information-form{
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-sothe,
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-tentrenthe,
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-ngayhethan,
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-cvv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-sothe div,
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-tentrenthe div,
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-ngayhethan div,
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-cvv div{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-sothe p.active,
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-tentrenthe p.active,
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-ngayhethan p.active,
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-cvv p.active{
+  display: block;
+  color: red;
+  font-size: 13px;
+  border-bottom: 1px solid red;
+  font-weight: 500;
+}
+
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-sothe p,
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-tentrenthe p,
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-ngayhethan p,
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-cvv p{
+  display: none;
+}
+
+
+
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-sothe div i,
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-tentrenthe div i,
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-ngayhethan div i,
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-cvv div i{
+  font-size: 7px;
+  color: red;
+}
+
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-sothe div p,
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-tentrenthe div p,
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-ngayhethan div p,
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-cvv div p{
+  font-weight: 600;
+  font-size: 15px;
+  color: black;
+  border: none;
+  display: block;   
+}
+
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-sothe input,
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-tentrenthe input,
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-ngayhethan input,
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-cvv input{
+  padding: 3px 10px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  transition: all .5s ease;
+  font-weight: 500;
+  background-color: goldenrod;
+  width: 100%;
+}
+
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-sothe input:focus,
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-tentrenthe input:focus,
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-ngayhethan input:focus,
+.wrapper-body-thanhtoan .middle-information-payment .information-form .form-cvv input:focus{
+  background-color: whitesmoke;
+}
+
+@media screen and (max-width: 430px){
+
+  .wrapper-body-thanhtoan .wrapper-top .wrapper-top-back{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .wrapper-body-thanhtoan .wrapper-top .wrapper-top-back a{
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    height: 100%;
+    font-size: 12px;
+  }
+
+  .wrapper-body-thanhtoan .wrapper-top .wrapper-top-back a p{
+    font-size: 13px;
+    padding: 0;
+  }
+
+
+  .wrapper-body-thanhtoan .wrapper-middle{
+    margin-top: 50px;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .wrapper-body-thanhtoan .middle-information-payment .information-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .wrapper-body-thanhtoan .wrapper-middle .method-list ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 20px;
+    margin: 0;
+    list-style: none;
+  }
+
+  .wrapper-body-thanhtoan .wrapper-middle .middle-end button{
+    width: 40%;
+    height: 100%;
+    background-color: goldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all .75s ease;
+  }
+
+  .wrapper-body-thanhtoan .wrapper-bottom div ul{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+    list-style: none;
+  }
+}

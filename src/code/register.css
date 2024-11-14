@@ -1,0 +1,329 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+#body-register{
+  display: none;
+}
+
+.wrapper-body-register{
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.wrapper-body-register .wrapper-top{
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper-body-register .wrapper-top img{
+  width: 30%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.wrapper-body-register .wrapper-register{
+  margin-top: 120px;
+  background-color: rgba(255, 255, 255, .65);
+  width: 80%;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper-body-register .wrapper-register .register-box{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper-body-register .wrapper-register .register-box .register-title{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.wrapper-body-register .wrapper-register .register-box .register-title p{
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 2px solid black;
+}
+
+.wrapper-body-register .wrapper-register .register-box .register-form{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.wrapper-body-register .wrapper-register .register-box .register-form form{
+  width: 100%;
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 40% 40% 10% 10%;
+  gap: 10px;
+  padding: 0 50px;
+}
+
+.register-box .register-form form .register-form-ten,
+.register-box .register-form form .register-form-email,
+.register-box .register-form form .register-form-password,
+.register-box .register-form form .register-form-verifypassword,
+.register-box .register-form form .register-form-gender,
+.register-box .register-form form .register-form-address{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.register-box .register-form form .register-submit{
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-box .register-form form .register-form-ten .form-ten-title,
+.register-box .register-form form .register-form-email .form-email-title,
+.register-box .register-form form .register-form-password .form-password-title,
+.register-box .register-form form .register-form-verifypassword .form-verifypassword-title,
+.register-box .register-form form .register-form-gender .form-gender-title,
+.register-box .register-form form .register-form-address .form-address-title{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.register-box .register-form form .register-form-ten .form-ten-title i,
+.register-box .register-form form .register-form-email .form-email-title i,
+.register-box .register-form form .register-form-password .form-password-title i,
+.register-box .register-form form .register-form-verifypassword .form-verifypassword-title i,
+.register-box .register-form form .register-form-gender .form-gender-title i,
+.register-box .register-form form .register-form-address .form-address-title i{
+  font-size: 8px;
+  color: red;
+}
+
+.register-box .register-form form .register-form-ten .form-ten-title p,
+.register-box .register-form form .register-form-email .form-email-title p,
+.register-box .register-form form .register-form-password .form-password-title p,
+.register-box .register-form form .register-form-verifypassword .form-verifypassword-title p,
+.register-box .register-form form .register-form-gender .form-gender-title p,
+.register-box .register-form form .register-form-address .form-address-title p{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.register-box .register-form form .register-form-ten .form-ten-input,
+.register-box .register-form form .register-form-email .form-email-input,
+.register-box .register-form form .register-form-password .form-password-input,
+.register-box .register-form form .register-form-verifypassword .form-verifypassword-input,
+.register-box .register-form form .register-form-address .form-address-input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.register-box .register-form form .register-form-ten .form-ten-input p,
+.register-box .register-form form .register-form-email .form-email-input p,
+.register-box .register-form form .register-form-password .form-password-input p,
+.register-box .register-form form .register-form-verifypassword .form-verifypassword-input p,
+.register-box .register-form form .register-form-address .form-address-input p{
+  color: red;
+  font-weight: 600;
+  font-size: 13px;
+  border-bottom: 1px solid red;
+  display: none;
+}
+
+.register-box .register-form form .register-form-ten .form-ten-input p.active,
+.register-box .register-form form .register-form-email .form-email-input p.active,
+.register-box .register-form form .register-form-password .form-password-input p.active,
+.register-box .register-form form .register-form-verifypassword .form-verifypassword-input p.active,
+.register-box .register-form form .register-form-address .form-address-input p.active{
+  display: block;
+}
+
+.register-box .register-form form .register-form-gender .form-gender-input{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.register-box .register-form form .register-form-gender .form-gender-input div{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.register-box .register-form form .register-form-gender .form-gender-input div input{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+
+.register-box .register-form form .register-form-ten .form-ten-input input,
+.register-box .register-form form .register-form-email .form-email-input input,
+.register-box .register-form form .register-form-password .form-password-input input,
+.register-box .register-form form .register-form-verifypassword .form-verifypassword-input input,
+.register-box .register-form form .register-form-address .form-address-input input{
+  width: 70%;
+  background-color: goldenrod;
+  outline: none;
+  border: none;
+  padding: 5px 20px;
+  font-weight: 600;
+  transition: all .75s ease;
+}
+
+.register-box .register-form form .register-form-ten .form-ten-input input:focus,
+.register-box .register-form form .register-form-email .form-email-input input:focus,
+.register-box .register-form form .register-form-password .form-password-input input:focus,
+.register-box .register-form form .register-form-verifypassword .form-verifypassword-input input:focus,
+.register-box .register-form form .register-form-address .form-address-input input:focus{
+  background-color: whitesmoke;
+}
+
+.register-submit #submit{
+  margin-top: 20px;
+  width: 20%;
+  height: 30px;
+  background-color: darkred;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  transition: all .75s ease;
+}
+
+.register-submit #submit:hover{
+  border-radius: 20px;
+}
+
+.login-register{
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-register button{
+  background-color: transparent;
+  color: darkblue;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* Wrapper Bottom */
+.wrapper-body-register .wrapper-bottom{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 10px 0;
+}
+
+.wrapper-body-register .wrapper-bottom div{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper-body-register .wrapper-bottom div ul{
+  padding: 0 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.wrapper-body-register .wrapper-bottom div ul li{
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .75s ease;
+}
+
+.wrapper-body-register .wrapper-bottom div ul li:hover{
+  color: goldenrod;
+}
+
+@media screen and (max-width: 430px) {
+  .wrapper-body-register .wrapper-register .register-box .register-form{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .wrapper-body-register .wrapper-register .register-box .register-form form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .register-submit #submit{
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    background-color: darkred;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    transition: all .75s ease;
+  }
+
+  .wrapper-body-register .wrapper-bottom div ul{
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+}

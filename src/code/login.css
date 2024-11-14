@@ -1,0 +1,257 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+#body-login{
+  display: none;
+}
+
+.wrapper-body-login{
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.wrapper-body-login .wrapper-top{
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper-body-login .wrapper-top img{
+  width: 30%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.wrapper-body-login .wrapper-login{
+  margin-top: 120px;
+  background-color: rgba(255, 255, 255, .65);
+  width: 60%;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper-body-login .wrapper-login .login-box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.wrapper-body-login .wrapper-login .login-box .login-title{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper-body-login .wrapper-login .login-box .login-title p{
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 2px solid black;
+}
+
+.wrapper-body-login .wrapper-login .login-box .login-form{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.wrapper-body-login .wrapper-login .login-box .login-form form{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wrapper-body-login .wrapper-login .login-box .login-form form .login-tendangnhap,
+.wrapper-body-login .wrapper-login .login-box .login-form form .login-matkhau
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+
+.wrapper-body-login .wrapper-login .login-box .login-form form .login-tendangnhap .login-tendangnhap-title,
+.wrapper-body-login .wrapper-login .login-box .login-form form .login-matkhau .login-matkhau-title{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.wrapper-body-login .wrapper-login .login-box .login-form form .login-tendangnhap .login-tendangnhap-title i,
+.wrapper-body-login .wrapper-login .login-box .login-form form .login-matkhau .login-matkhau-title i{
+  font-size: 9px;
+  color: red;
+}
+
+.wrapper-body-login .wrapper-login .login-box .login-form form .login-tendangnhap .login-tendangnhap-title p,
+.wrapper-body-login .wrapper-login .login-box .login-form form .login-matkhau .login-matkhau-title p{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.wrapper-body-login .wrapper-login .login-box .login-form form .login-tendangnhap .login-tendangnhap-input,
+.wrapper-body-login .wrapper-login .login-box .login-form form .login-matkhau .login-matkhau-input{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.wrapper-body-login .wrapper-login .login-box .login-form form .login-tendangnhap .login-tendangnhap-input input,
+.wrapper-body-login .wrapper-login .login-box .login-form form .login-matkhau .login-matkhau-input input{
+  width: 35%;
+  padding: 3px 20px;
+  font-weight: 600;
+  background-color: goldenrod;
+  border: none;
+  outline: none;  
+  transition: all .75s ease;
+}
+
+.wrapper-body-login .wrapper-login .login-box .login-form form .login-tendangnhap .login-tendangnhap-input input:focus,
+.wrapper-body-login .wrapper-login .login-box .login-form form .login-matkhau .login-matkhau-input input:focus{
+  background-color: whitesmoke;
+}
+
+.wrapper-body-login .wrapper-login .login-box .login-form form .login-tendangnhap .login-tendangnhap-input p,
+.wrapper-body-login .wrapper-login .login-box .login-form form .login-matkhau .login-matkhau-input p{
+  color: red;
+  font-size: 14px;
+  border-bottom: 1px solid red;
+  display: none;
+}
+
+.wrapper-body-login .wrapper-login .login-box .login-form form .login-tendangnhap .login-tendangnhap-input p.active,
+.wrapper-body-login .wrapper-login .login-box .login-form form .login-matkhau .login-matkhau-input p.active{
+  display: block;
+}
+
+.wrapper-body-login .wrapper-login .login-box .login-btn{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper-body-login .wrapper-login .login-box .login-btn button{
+  width: 20%;
+  background-color: darkblue;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  height: 30px;
+  transition: all .75s ease;
+}
+
+.wrapper-body-login .wrapper-login .login-box .login-btn button:hover{
+  background-color: darkred;
+  border-radius: 20px;
+}
+
+
+.register-login button{
+  background-color: transparent;
+  color: darkred;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+
+/* Wrapper Bottom */
+.wrapper-body-login .wrapper-bottom{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 10px 0;
+}
+
+.wrapper-body-login .wrapper-bottom div{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper-body-login .wrapper-bottom div ul{
+  padding: 0 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.wrapper-body-login .wrapper-bottom div ul li{
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .75s ease;
+}
+
+.wrapper-body-login .wrapper-bottom div ul li:hover{
+  color: goldenrod;
+}
+
+@media screen and (max-width: 430px){
+  .wrapper-body-login .wrapper-login .login-box .login-form form .login-tendangnhap .login-tendangnhap-input input,
+  .wrapper-body-login .wrapper-login .login-box .login-form form .login-matkhau .login-matkhau-input input{
+    width: 100%;
+    padding: 3px 20px;
+    font-weight: 600;
+    background-color: goldenrod;
+    border: none;
+    outline: none;  
+    transition: all .75s ease;
+  }
+
+
+  .wrapper-body-login .wrapper-login .login-box .login-btn button{
+    width: 50%;
+    background-color: darkblue;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    height: 30px;
+    transition: all .75s ease;
+  }  
+
+  .wrapper-body-login .wrapper-bottom div ul{
+    padding: 0 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+}
